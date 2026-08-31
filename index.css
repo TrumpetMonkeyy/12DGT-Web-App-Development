@@ -1,0 +1,14 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: white;
+  min-height: 1000px; /* Tells the website there could be content anywhere within this vertical range, allowing you to scroll even if there is nothing to view (min 742.8px (or 742.799975586px)) */
+}
+
+html { /* pretty self explanatory, makes the links scroll smoothly */
+  scroll-behavior: smooth;
+}
+
+*{ /* for whatever reason the page doesn't go all the way to the edge so I need to do this to set the margin and padding to 0 (* means everything) */ 
+  margin: 0;
+  padding: 0;
+}

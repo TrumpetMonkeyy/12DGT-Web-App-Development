@@ -1,0 +1,42 @@
+.navbar { 
+  display: flex; /* Creates a 'flexbox container' for the navbar, this aligns the items in the navbar section side by side */
+  justify-content: space-between; /* Creates a gap between the items  */
+  padding: 1rem 2rem; /* Adds padding (distance from the borders) to the text on the bar, the first one is vertical padding, the second one is horizontal padding */
+  background-color: #ec4f4f; /* Changes the colour of the bar */
+  position: sticky; /* makes the navbar stick to the screen even when you scroll */
+  z-index: 1000; /* z indexes are like layers, this makes the navbar goes over top of everything else */
+  top: 1.5rem; /* moves the navbar off of the top of the screen by 2 rem */
+  margin: 0 3rem; /* moves the navbar off of the sides of the screen by 3 rem */
+  border-radius: 17px; /* rounds the edges */
+  box-shadow: 0px 0px 50px rgba(182, 11, 11, 0.5); /* adds a slight glow to the navbar */
+}
+
+/* Triggers a change in opacity to 75% over 350ms when hovering over an item in the navbar section, as well as changing the cursor to a pointer */
+.navbar section:hover {
+  opacity: 0.75;
+  cursor: pointer;
+  transition: 0.35s;
+}
+
+/* Modifies size and thickness of the all of the text, as well as thickness of the bar in an h2 section of navbar */
+.navbar h2 { 
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.navbar h1 { /* Modifies size and thickness of the all of the text, as well as thickness of the bar in an h1 section of navbar */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.scroll-link{
+  color: white; /* Changes the colour of the text on the bar */
+  text-decoration: none; /* Removes the underline from the links */
+}
+
+.log{ /* since this is not a scroll link I have chosen to make it seperate from the rest, hence it needs a seperate css section */
+  color: white; /* Changes the colour of the text on the bar */
+  text-decoration: none; /* Removes the underline from the links */
+}

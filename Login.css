@@ -1,0 +1,116 @@
+body{
+    min-height: 100vh;
+    margin: 0;
+}
+
+.logumbrella{
+    width: 100%;
+    height: 100vh;
+    background-image: url("blood-brothers\ log\ deco.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lognav{
+    position: absolute;
+    top: 1.5rem;
+    margin: 0 3rem;
+    width: 100%;
+    text-align: center;
+}
+
+.logcontentmain {
+    color:#ffffff;
+    padding: 4rem 13.5rem; /* Horizontal padding */ 
+    background-color: #ec4f4f; /* Changes the colour of the bar */ 
+    border-radius: 17px; /* rounds the edges */ 
+    box-shadow: 0px 0px 50px rgba(182, 11, 11, 0.5); /* adds a slight glow to the navbar */
+    top: 2rem;
+    transform: translateY(3rem)
+}
+
+.logtitle{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0;
+    margin-bottom: 2rem;
+}
+
+.signup{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(1.25rem)
+
+}
+
+.signup:hover{
+    opacity: 0.75;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+/* Container to stack the inputs neatly */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    max-width: 400px;
+}
+
+/* The text boxes */
+.login-input {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+    border: 2px solid #f09292;
+    border-radius: 50px; /* Matches your navbar's pill shape */
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Makes the border darker red when you click into the box */
+.login-input:focus {
+    border-color: #ec4f4f;
+}
+
+/* The submit button */
+.login-button {
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    background-color: #ec4f4f;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(236, 79, 79, 0.3);
+    transition: 0.2s, 0.3s;
+}
+
+.login-button:hover {
+    background-color: #d63d3d;
+    transform: translateY(-2px); /* Slight lift effect when hovering */
+}
+
+/* The "Sign Up" text at the bottom */
+.toggle-text {
+    margin-top: 2rem;
+    color: #ffffff;
+    font-size: 1.1rem;
+}
+
+.toggle-text span {
+    color: #ec4f4f;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.toggle-text span:hover {
+    text-decoration: underline;
+}
